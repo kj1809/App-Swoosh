@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 // this is where my project will start from !!
+    // added readme!!
+    //  trying to add git !!
+    
+    // so please bare with me !!
 
 }
 
