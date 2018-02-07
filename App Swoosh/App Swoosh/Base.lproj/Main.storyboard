@@ -171,7 +171,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Nu0-TT-bAp" kind="show" id="pMS-sK-Itm"/>
+                                    <action selector="nextBtnPressed:" destination="Drc-Sn-reB" eventType="touchUpInside" id="uAd-nk-l5o"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7P-ok-Hlk">
@@ -202,6 +202,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nt0-7s-hUp"/>
                     </view>
+                    <connections>
+                        <segue destination="Nu0-TT-bAp" kind="show" identifier="skillVCSegue" id="IRa-QQ-Tzn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QfV-nK-sUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wsf-fd-hD0" userLabel="Exit" sceneMemberID="exit"/>
@@ -276,13 +279,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg8-Ew-ekJ">
-                                <rect key="frame" x="10" y="35" width="29" height="24"/>
-                                <state key="normal" image="backButton"/>
-                                <connections>
-                                    <segue destination="5KP-eA-jMa" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="yx7-rN-Fqa"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -292,11 +288,9 @@
                             <constraint firstItem="ngH-3X-ECz" firstAttribute="trailing" secondItem="PX8-Yb-O5c" secondAttribute="trailing" constant="16" id="B3C-90-Mp0"/>
                             <constraint firstItem="ngH-3X-ECz" firstAttribute="bottom" secondItem="PX8-Yb-O5c" secondAttribute="bottom" constant="20" id="BOj-Ee-ftp"/>
                             <constraint firstItem="YM9-tE-5sl" firstAttribute="top" secondItem="ngH-3X-ECz" secondAttribute="top" constant="21" id="M5U-Ex-jsf"/>
-                            <constraint firstItem="gg8-Ew-ekJ" firstAttribute="leading" secondItem="ngH-3X-ECz" secondAttribute="leading" constant="10" id="Ndk-wI-Il7"/>
                             <constraint firstItem="uvY-IN-viR" firstAttribute="bottom" secondItem="ngH-3X-ECz" secondAttribute="bottom" id="OF6-Mu-d5g"/>
                             <constraint firstItem="YM9-tE-5sl" firstAttribute="leading" secondItem="ngH-3X-ECz" secondAttribute="leading" constant="20" id="RSA-CO-pXc"/>
                             <constraint firstItem="ngH-3X-ECz" firstAttribute="trailing" secondItem="YM9-tE-5sl" secondAttribute="trailing" constant="20" id="Z8g-bQ-cXj"/>
-                            <constraint firstItem="gg8-Ew-ekJ" firstAttribute="top" secondItem="ngH-3X-ECz" secondAttribute="top" constant="15" id="dEh-5d-kgd"/>
                             <constraint firstItem="uvY-IN-viR" firstAttribute="trailing" secondItem="ngH-3X-ECz" secondAttribute="trailing" id="eXD-PM-GDL"/>
                             <constraint firstItem="PX8-Yb-O5c" firstAttribute="leading" secondItem="ngH-3X-ECz" secondAttribute="leading" constant="16" id="lwd-N4-w9y"/>
                             <constraint firstItem="uvY-IN-viR" firstAttribute="top" secondItem="v9V-br-FU7" secondAttribute="top" id="rls-lR-1rr"/>
@@ -306,7 +300,6 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hv9-WR-FlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="5KP-eA-jMa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1548" y="134"/>
         </scene>
